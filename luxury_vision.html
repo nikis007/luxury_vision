@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luxury Visions - Catálogo Digital</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            background-color: #0a0a0a;
+            color: #ffffff;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            padding: 20px 0;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+        }
+
+        .banner {
+            width: 100%;
+            max-height: 500px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5em;
+            color: #d4af37;
+            margin-bottom: 50px;
+            letter-spacing: 8px;
+            font-weight: 300;
+            text-transform: uppercase;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .product-card {
+            background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+            cursor: pointer;
+            box-shadow: 0 8px 30px rgba(0,0,0,0.4);
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 50px rgba(212, 175, 55, 0.3);
+        }
+
+        .product-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            background: linear-gradient(135deg, #2d2d2d 0%, #3d3d3d 100%);
+        }
+
+        .product-info {
+            padding: 25px;
+        }
+
+        .product-category {
+            color: #d4af37;
+            font-size: 0.9em;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        .product-name {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: 400;
+        }
+
+        .product-description {
+            color: #cccccc;
+            font-size: 0.95em;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .product-price {
+            font-size: 1.8em;
+            color: #d4af37;
+            font-weight: bold;
+        }
+
+        .category-section {
+            margin-bottom: 80px;
+        }
+
+        .category-header {
+            font-size: 2em;
+            color: #d4af37;
+            margin-bottom: 30px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #d4af37;
+            letter-spacing: 4px;
+        }
+
+        .footer {
+            background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 2px solid #d4af37;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-text {
+            color: #cccccc;
+            font-size: 1.1em;
+            letter-spacing: 2px;
+        }
+
+        .footer-tagline {
+            color: #d4af37;
+            font-size: 1.3em;
+            margin-top: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 760 494'%3E%3Crect width='760' height='494' fill='%23000000'/%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' style='stop-color:%231a1a1a;stop-opacity:1' /%3E%3Cstop offset='100%25' style='stop-color:%233d3d3d;stop-opacity:1' /%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='760' height='494' fill='url(%23grad)'/%3E%3Ctext x='50%25' y='50%25' font-family='Georgia, serif' font-size='60' fill='%23d4af37' text-anchor='middle' dominant-baseline='middle' letter-spacing='15'%3ELUXURY VISION%3C/text%3E%3C/svg%3E" alt="Luxury Visions Banner" class="banner">
+    </div>
+
+    <div class="container">
+        <h1 class="section-title">Catálogo Premium</h1>
+
+        <div class="category-section">
+            <h2 class="category-header">Coleção Feminina</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/1055691/pexels-photo-1055691.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Vestido Elegance" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Vestidos</div>
+                        <div class="product-name">Vestido Elegance</div>
+                        <div class="product-description">Vestido longo em seda pura com detalhes bordados à mão. Perfeito para ocasiões especiais.</div>
+                        <div class="product-price">R$ 899,00</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/1926769/pexels-photo-1926769.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Blazer Sofisticado" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Blazers</div>
+                        <div class="product-name">Blazer Sofisticado</div>
+                        <div class="product-description">Blazer estruturado em lã italiana com corte impecável e forro premium.</div>
+                        <div class="product-price">R$ 749,00</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/7679720/pexels-photo-7679720.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Blusa Luxo Cetim" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Blusas</div>
+                        <div class="product-name">Blusa Luxo Cetim</div>
+                        <div class="product-description">Blusa em cetim com mangas bufantes e acabamento refinado. Elegância em cada detalhe.</div>
+                        <div class="product-price">R$ 459,00</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/7679482/pexels-photo-7679482.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Saia Midi Premium" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Saias</div>
+                        <div class="product-name">Saia Midi Premium</div>
+                        <div class="product-description">Saia midi plissada em tecido nobre com caimento perfeito e movimento sofisticado.</div>
+                        <div class="product-price">R$ 539,00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-section">
+            <h2 class="category-header">Coleção Masculina</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/2897883/pexels-photo-2897883.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Terno Executive" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Ternos</div>
+                        <div class="product-name">Terno Executive</div>
+                        <div class="product-description">Terno slim fit em lã merino com corte inglês. Sofisticação e conforto.</div>
+                        <div class="product-price">R$ 1.499,00</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/297933/pexels-photo-297933.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Camisa Social Premium" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Camisas</div>
+                        <div class="product-name">Camisa Social Premium</div>
+                        <div class="product-description">Camisa em algodão egípcio com acabamento impecável e botões de madrepérola.</div>
+                        <div class="product-price">R$ 389,00</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/1598507/pexels-photo-1598507.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Calça Alfaiataria" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Calças</div>
+                        <div class="product-name">Calça Alfaiataria</div>
+                        <div class="product-description">Calça de alfaiataria em tecido stretch premium com vincos marcados e caimento perfeito.</div>
+                        <div class="product-price">R$ 569,00</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.pexels.com/photos/1124468/pexels-photo-1124468.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sobretudo Clássico" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Casacos</div>
+                        <div class="product-name">Sobretudo Clássico</div>
+                        <div class="product-description">Sobretudo em lã cashmere com forro de seda. Elegância atemporal.</div>
+                        <div class="product-price">R$ 1.899,00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="category-section">
+            <h2 class="category-header">Acessórios</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1590874103328-eac38a683ce7?w=800&q=80" alt="Bolsa Signature" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Bolsas</div>
+                        <div class="product-name">Bolsa Signature</div>
+                        <div class="product-description">Bolsa em couro legítimo com detalhes dourados e compartimentos inteligentes.</div>
+                        <div class="product-price">R$ 1.299,00</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1624222247344-52e2d0aab542?w=800&q=80" alt="Cinto Premium Couro" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Cintos</div>
+                        <div class="product-name">Cinto Premium Couro</div>
+                        <div class="product-description">Cinto em couro italiano com fivela em metal nobre. Acabamento artesanal.</div>
+                        <div class="product-price">R$ 349,00</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1601924638867-3a6de6b7a500?w=800&q=80" alt="Lenço Seda Pura" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Lenços</div>
+                        <div class="product-name">Lenço Seda Pura</div>
+                        <div class="product-description">Lenço em seda 100% com estampa exclusiva. Versatilidade e sofisticação.</div>
+                        <div class="product-price">R$ 279,00</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=800&q=80" alt="Óculos de Sol Luxury" class="product-image">
+                    <div class="product-info">
+                        <div class="product-category">Óculos</div>
+                        <div class="product-name">Óculos de Sol Luxury</div>
+                        <div class="product-description">Óculos com armação premium e lentes polarizadas. Design exclusivo e proteção UV.</div>
+                        <div class="product-price">R$ 899,00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-text">LUXURY VISIONS</div>
+            <div class="footer-tagline">"Onde a Elegância Encontra a Sofisticação"</div>
+        </div>
+    </div>
+</body>
+</html>
